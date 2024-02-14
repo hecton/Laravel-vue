@@ -1,0 +1,34 @@
+.__show_img_input_imagem {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    margin: 0.25rem;
+}
+.__show_img_input_imagem>span {
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+}
+.__show_img_input_imagem:has(img:hover) span {
+    transform: translateX(-50%) translateY(-21px);
+}
+.__input_imagem_vue  {
+    min-height: 1.5rem;
+}
+.__show_img_input_imagem img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.__input_imagem_vue label {
+    position: absolute;
+    top: 58%;
+}
